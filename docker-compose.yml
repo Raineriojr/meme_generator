@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  meme-maker:
+    image: meme-maker
+    build: .
+    volumes:
+      - .:/gerador_memes
+      - node_modules:/gerador_memes/node_modules
+
+volumes:
+  node_modules: {}
